@@ -1,20 +1,41 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './app/**/*.{js,ts,jsx,tsx,mdx}', // Note the addition of the `app` directory.
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+
+    // Or if using `src` directory:
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      screens: {
+        lg: '1224px',
       },
+      backgroundImage: {
+        'hero-mobile':
+          "linear-gradient(to top, rgba(3, 3, 5, 0.89), rgba(3, 3, 5, 0.089)), url('/images/hero/hero.jpg')",
+        'hero-desktop': "url('/images/hero/hero.jpg')",
+      },
+    },
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      white: '#ffffff',
+      grey: '#b5b5b5',
+      'accent-text': '#ff852d',
+      'main-bg': '#030305',
+      gradient: 'rgba(3, 3, 5, 0.89)',
+      black: '000000',
+      purple: '#3f3cbb',
+      midnight: '#121063',
+      metal: '#565584',
+      tahiti: '#3ab7bf',
+      silver: '#ecebff',
+      'bubble-gum': '#ff77e9',
+      bermuda: '#78dcca',
     },
   },
   plugins: [],
 };
-export default config;
