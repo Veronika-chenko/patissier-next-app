@@ -5,12 +5,12 @@ interface HeroSectionProps {}
 
 const HeroSection: FC<HeroSectionProps> = () => {
   return (
-    <section className="w-full h-[615px] mt-120 bg-main-bg text-grey">
+    <section className="w-full h-[615px] mt-120 text-grey">
       <div className="w-full h-full lg:max-w-[1344px] lg:px-[12px] lg:mx-[auto] lg:flex justify-center">
         <div className="w-full h-full bg-hero-mobile bg-center bg-no-repeat lg:bg-hero-desktop bg-contain lg:max-w-[732px]"></div>
         <div className="absolute lg:static inset-0 flex lg:block flex-col justify-center items-center left-1/2 transform -translate-x-1/2 lg:translate-x-0 max-w-[344px] lg:max-w-[588px] h-[615px] lg:pt-[152px] lg:pb-[130px]">
           <h1
-            className={`${marianna.className} text-white mb-[24px] text-[72px] leading-[1]`}
+            className={`${marianna.className} text-white mb-[24px] text-[72px] lg:text-[96px] leading-[1]`}
           >
             Ваш ідеальний десерт
           </h1>

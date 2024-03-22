@@ -11,6 +11,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        sm: '375px',
         lg: '1224px',
       },
       backgroundImage: {
