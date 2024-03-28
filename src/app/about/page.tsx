@@ -1,5 +1,5 @@
-import StatisticsSection from '@/components/statistics';
-import { PageTitle } from '@/components/texts/titles/PageTitle';
+import StatisticsSection from '@/components/modules/statistics';
+import { PageTitle } from '@/components/common/texts/titles/PageTitle';
 import AboutHeroSection from '@/containers/about-page/hero-section';
 
 const About = () => {

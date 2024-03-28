@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import statistics from './statistics.json';
-import Container from '../container';
+import Container from '../../common/container';
 
 const StatisticsSection = () => {
   return (

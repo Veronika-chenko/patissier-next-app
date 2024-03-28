@@ -1,9 +1,9 @@
-import Container from '@/components/container';
+import Container from '@/components/common/container';
 import { marianna } from '@/libs/fonts';
 import Image from 'next/image';
 import aboutImage from '/public/images/about/about.jpg';
 import signature from '/public/images/about/signature.png';
-import ReadMoreLink from '@/components/readMoreLink';
+import ReadMoreLink from '@/components/common/readMoreLink';
 
 const AboutHeroSection = ({ headingLevel }: { headingLevel: 'h1' | 'h2' }) => {
   const Heading = headingLevel;

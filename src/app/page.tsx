@@ -1,6 +1,6 @@
 // import Image from 'next/image';
 
-import StatisticsSection from '@/components/statistics';
+import StatisticsSection from '@/components/modules/statistics';
 import { default as AboutSection } from '@/containers/about-page/hero-section';
 import HeroSection from '@/containers/home-page/hero-section';
 
