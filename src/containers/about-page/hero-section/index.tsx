@@ -3,9 +3,11 @@ import { marianna } from '@/libs/fonts';
 import Image from 'next/image';
 import aboutImage from '/public/images/about/about.jpg';
 import signature from '/public/images/about/signature.png';
+import ReadMoreLink from '@/components/readMoreLink';
 
 const AboutHeroSection = ({ headingLevel }: { headingLevel: 'h1' | 'h2' }) => {
   const Heading = headingLevel;
+  const isMainSection = headingLevel === 'h1';
   return (
     <section className="w-full text-white pb-[60px] lg:pb-[100px] lg:pt-[60px]">
       <Container>
@@ -43,6 +45,12 @@ const AboutHeroSection = ({ headingLevel }: { headingLevel: 'h1' | 'h2' }) => {
                   випічку та десерти, а також записатися на цікаві й корисні
                   майстер-класи або курси з приготування найкращих солодощів.
                 </p>
+                {!isMainSection && (
+                  <div className="text-center lg:text-left mt-[20px] lg:mt-[24px]">
+                    <ReadMoreLink path="/about" message="Читати далі" />
+                  </div>
+                )}
+
                 <Image
                   src={signature}
                   alt="signature"

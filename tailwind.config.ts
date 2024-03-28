@@ -18,6 +18,7 @@ module.exports = {
         'hero-mobile':
           "linear-gradient(to top, rgba(3, 3, 5, 0.89), rgba(3, 3, 5, 0.089)), url('/images/hero/hero.jpg')",
         'hero-desktop': "url('/images/hero/hero.jpg')",
+        'read-more-link': "url('/images/arrows/arrowForward.svg')",
       },
     },
     colors: {
@@ -26,6 +27,7 @@ module.exports = {
       white: '#ffffff',
       grey: '#b5b5b5',
       'accent-text': '#ff852d',
+      'accent-dark': '#ff6b00',
       'main-bg': '#030305',
       gradient: 'rgba(3, 3, 5, 0.89)',
       black: '000000',
