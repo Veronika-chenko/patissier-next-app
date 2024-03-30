@@ -4,14 +4,20 @@ import Image from 'next/image';
 import aboutImage from '/public/images/about/about.jpg';
 import signature from '/public/images/about/signature.png';
 import ReadMoreLink from '@/components/common/readMoreLink';
+import BackLink from '@/components/common/backLink';
 
 const AboutHeroSection = ({ headingLevel }: { headingLevel: 'h1' | 'h2' }) => {
   const Heading = headingLevel;
-  const isMainSection = headingLevel === 'h1';
+  const isAboutPage = headingLevel === 'h1';
   return (
-    <section className="w-full text-white pb-[60px] lg:pb-[100px] pt-[60px] lg:pt-[100px]">
+    <section className="relative w-full text-white pb-[60px] lg:pb-[100px] pt-[60px] lg:pt-[100px]">
       <Container>
         <div>
+          {isAboutPage && (
+            <div className="absolute top-[20px]">
+              <BackLink path="/" />
+            </div>
+          )}
           <Heading
             className={`${marianna.className} mb-[40px] text-[52px] text-accent-text text-center lg:mb-[100px] lg:text-[84px]`}
           >
@@ -25,6 +31,8 @@ const AboutHeroSection = ({ headingLevel }: { headingLevel: 'h1' | 'h2' }) => {
               width="0"
               height="0"
               sizes="100vw"
+              priority={isAboutPage}
+              placeholder="blur"
             />
             <div className="lg:h-[424px] lg:max-w[550px]">
               <p className="mb-[12px] lg:mb-[16px] text-[20px] font-semibold">
@@ -45,7 +53,7 @@ const AboutHeroSection = ({ headingLevel }: { headingLevel: 'h1' | 'h2' }) => {
                   випічку та десерти, а також записатися на цікаві й корисні
                   майстер-класи або курси з приготування найкращих солодощів.
                 </p>
-                {!isMainSection && (
+                {!isAboutPage && (
                   <div className="text-center lg:text-left mt-[20px] lg:mt-[24px]">
                     <ReadMoreLink path="/about" message="Читати далі" />
                   </div>

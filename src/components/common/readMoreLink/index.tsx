@@ -8,16 +8,13 @@ type ReadMoreLinkProps = {
 
 const ReadMoreLink = ({ path, message }: ReadMoreLinkProps) => {
   return (
-    <>
-      <Link
-        href={path}
-        className="inline-flex gap-[12px] items-center py-[16px] text-[16px] font-bold text-accent-text hover:text-accent-dark"
-      >
-        {message}
-        <ArrowRight className="stroke-current" />
-      </Link>
-      <div></div>
-    </>
+    <Link
+      href={path}
+      className="inline-flex gap-[12px] items-center py-[16px] text-[16px] font-bold text-accent-text hover:text-accent-dark"
+    >
+      {message}
+      <ArrowRight className="stroke-current" />
+    </Link>
   );
 };
 
