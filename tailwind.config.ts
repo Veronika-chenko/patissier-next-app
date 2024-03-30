@@ -34,6 +34,7 @@ module.exports = {
       'accent-dark': '#ff6b00',
       accent: '#ff852d',
       'main-bg': '#030305',
+      'icon-bg': '#282728',
       gradient: 'rgba(3, 3, 5, 0.89)',
       black: '000000',
       purple: '#3f3cbb',
