@@ -9,7 +9,7 @@ const AboutHeroSection = ({ headingLevel }: { headingLevel: 'h1' | 'h2' }) => {
   const Heading = headingLevel;
   const isMainSection = headingLevel === 'h1';
   return (
-    <section className="w-full text-white pb-[60px] lg:pb-[100px] lg:pt-[60px]">
+    <section className="w-full text-white pb-[60px] lg:pb-[100px] pt-[60px] lg:pt-[100px]">
       <Container>
         <div>
           <Heading
@@ -21,7 +21,7 @@ const AboutHeroSection = ({ headingLevel }: { headingLevel: 'h1' | 'h2' }) => {
             <Image
               src={aboutImage}
               alt="About us"
-              className="lg:w-[552px] lg:h-[424px] rounded-[12px] object-cover shrink-0"
+              className="lg:w-[552px] lg:h-[424px] rounded-md object-cover shrink-0"
               width="0"
               height="0"
               sizes="100vw"

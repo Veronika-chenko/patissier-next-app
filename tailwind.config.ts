@@ -20,6 +20,10 @@ module.exports = {
         'hero-desktop': "url('/images/hero/hero.jpg')",
         'read-more-link': "url('/images/arrows/arrowForward.svg')",
       },
+      borderRadius: {
+        sm: '8px',
+        md: '12px',
+      },
     },
     colors: {
       transparent: 'transparent',
@@ -28,6 +32,7 @@ module.exports = {
       grey: '#b5b5b5',
       'accent-text': '#ff852d',
       'accent-dark': '#ff6b00',
+      accent: '#ff852d',
       'main-bg': '#030305',
       gradient: 'rgba(3, 3, 5, 0.89)',
       black: '000000',
