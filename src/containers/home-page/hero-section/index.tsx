@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { marianna } from '@/libs/fonts';
+import Link from 'next/link';
 
 interface HeroSectionProps {}
 
@@ -20,7 +21,12 @@ const HeroSection: FC<HeroSectionProps> = () => {
           <p className="mb-[76px] lg:mb-[68px] text-[16px]">
             Усі десерти створюються власноруч з якісних та свіжих продуктів
           </p>
-          <button>Магазин</button>
+          <Link
+            href="/store"
+            className="flex justify-center items-center w-full lg:w-[216px] p-[16px] font-bold text-black bg-accent hover:bg-accent-dark focus:bg-accent-dark ease-linear duration-250 rounded-md"
+          >
+            Магазин
+          </Link>
         </div>
       </div>
     </section>

@@ -24,7 +24,7 @@ const MenuList = ({ handleClick }: MenuListProps) => {
         <li key={name} className="text-[16px] rounded-sm">
           <Link
             href={path}
-            className={`px-[24px] py-[6px] rounded-sm hover:text-accent-text ${
+            className={`px-[24px] py-[6px] rounded-sm hover:text-accent-text focus:text-accent-text ease-linear hover:duration-250 ${
               currentPath === path && activeLinkStyles
             }`}
             onClick={handleClick}

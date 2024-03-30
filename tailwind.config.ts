@@ -24,6 +24,9 @@ module.exports = {
         sm: '8px',
         md: '12px',
       },
+      transitionDuration: {
+        '250': '250ms',
+      },
     },
     colors: {
       transparent: 'transparent',
@@ -36,7 +39,7 @@ module.exports = {
       'main-bg': '#030305',
       'icon-bg': '#282728',
       gradient: 'rgba(3, 3, 5, 0.89)',
-      black: '000000',
+      black: '#000000',
       purple: '#3f3cbb',
       midnight: '#121063',
       metal: '#565584',

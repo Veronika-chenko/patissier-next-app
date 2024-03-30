@@ -15,7 +15,7 @@ const AdditionalLinksList = ({ handleClick }: AdditionalLinksProps) => {
       <li>
         <button
           onClick={handleClick}
-          className="flex justify-center items-center w-[40px] h-[40px] rounded-full bg-icon-bg hover:text-accent-text"
+          className="flex justify-center items-center w-[40px] h-[40px] rounded-full bg-icon-bg hover:text-accent-text focus:text-accent-text ease-linear hover:duration-250"
         >
           <Search className="stroke-current" />
         </button>
@@ -23,7 +23,7 @@ const AdditionalLinksList = ({ handleClick }: AdditionalLinksProps) => {
       <li>
         <button
           onClick={handleClick}
-          className="flex justify-center items-center w-[40px] h-[40px] rounded-full bg-icon-bg hover:text-accent-text"
+          className="flex justify-center items-center w-[40px] h-[40px] rounded-full bg-icon-bg hover:text-accent-text focus:text-accent-text ease-linear hover:duration-250"
         >
           <Favorite className="stroke-current" />
         </button>
@@ -31,7 +31,7 @@ const AdditionalLinksList = ({ handleClick }: AdditionalLinksProps) => {
       <li>
         <button
           onClick={handleClick}
-          className="flex justify-center items-center w-[40px] h-[40px] rounded-full bg-icon-bg hover:text-accent-text"
+          className="flex justify-center items-center w-[40px] h-[40px] rounded-full bg-icon-bg hover:text-accent-text focus:text-accent-text ease-linear hover:duration-250"
         >
           <Basket className="stroke-current" />
         </button>
@@ -39,7 +39,7 @@ const AdditionalLinksList = ({ handleClick }: AdditionalLinksProps) => {
       <li>
         <button
           onClick={handleClick}
-          className="flex justify-center items-center w-[40px] h-[40px] rounded-full bg-icon-bg hover:text-accent-text"
+          className="flex justify-center items-center w-[40px] h-[40px] rounded-full bg-icon-bg hover:text-accent-text focus:text-accent-text ease-linear hover:duration-250"
         >
           <Phone className="stroke-current" />
         </button>
@@ -47,7 +47,7 @@ const AdditionalLinksList = ({ handleClick }: AdditionalLinksProps) => {
       <li>
         <button
           onClick={handleClick}
-          className="flex justify-center items-center w-[40px] h-[40px] rounded-full bg-icon-bg hover:text-accent-text"
+          className="flex justify-center items-center w-[40px] h-[40px] rounded-full bg-icon-bg hover:text-accent-text focus:text-accent-text ease-linear hover:duration-250"
         >
           <User className="stroke-current" />
         </button>

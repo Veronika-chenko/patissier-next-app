@@ -5,7 +5,7 @@ const BackLink = ({ path }: { path: string }) => {
   return (
     <Link
       href={path}
-      className="inline-flex gap-[8px] items-center text-[14px] text-grey hover:text-accent-text"
+      className="inline-flex gap-[8px] items-center text-[14px] text-grey hover:text-accent-text focus:text-accent-text ease-linear duration-250"
     >
       <ArrowLeft className="stroke-current" />
       назад
