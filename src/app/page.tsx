@@ -1,3 +1,4 @@
+import Footer from '@/components/modules/Footer';
 import StatisticsSection from '@/components/modules/Statistics';
 import { default as AboutSection } from '@/containers/about-page/hero-section';
 import HeroSection from '@/containers/home-page/hero-section';
@@ -13,6 +14,7 @@ export default function Home() {
       {/* Courses */}
       {/* Reviews */}
       {/* Insta */}
+      <Footer />
     </main>
   );
 }

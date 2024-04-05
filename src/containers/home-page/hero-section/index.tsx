@@ -11,7 +11,7 @@ const HeroSection: FC<HeroSectionProps> = () => {
         <div className="w-full h-full bg-hero-mobile bg-center bg-no-repeat lg:bg-hero-desktop bg-contain lg:max-w-[732px]"></div>
         <div className="absolute pt-[132px] lg:static inset-0 flex lg:block flex-col justify-center items-center left-1/2 transform -translate-x-1/2 lg:translate-x-0 max-w-[344px] lg:max-w-[588px] h-[615px] lg:pt-[152px] lg:pb-[130px]">
           <h1
-            className={`${marianna.className} text-white mb-[24px] text-[72px] lg:text-[96px] leading-[1]`}
+            className={`${marianna.className} text-white mb-[24px] text-[72px] lg:text-[96px] leading-[1] lg:mb-[40px]`}
           >
             Ваш ідеальний десерт
           </h1>
