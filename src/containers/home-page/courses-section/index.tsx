@@ -4,6 +4,7 @@ import { marianna } from '@/libs/fonts';
 import CourseCard from '@/components/modules/Cards/CourseCard';
 import { TCourse } from '@/types/Course';
 import { useEffect, useState } from 'react';
+import ReadMoreLink from '@/components/common/readMoreLink';
 
 const CoursesSection = () => {
   const [courses, setCourses] = useState<TCourse[]>([]);
@@ -26,9 +27,9 @@ const CoursesSection = () => {
   }, []);
 
   return (
-    <section className="">
+    <section className="py-[60px] lg:py-[100px]">
       <Container>
-        <div>
+        <div className="flex flex-col">
           <h2
             className={`${marianna.className} mb-[20px] text-[52px] text-accent-text text-center lg:mb-[32px] lg:text-[84px]`}
           >
@@ -38,12 +39,15 @@ const CoursesSection = () => {
             Перегляньте найближчі події,
             <br /> авторські курси та майстер-класи
           </p>
-          <ul className="flex flex-col gap-[20px] lg:flex-row lg:gap-[60px]">
+          <ul className="flex flex-col items-center gap-[20px] lg:flex-row lg:gap-[60px] lg:order-1">
             {courses &&
               courses.map((course) => (
                 <CourseCard key={course.id} course={course} />
               ))}
           </ul>
+          <div className="flex justify-center lg:justify-end lg:mb-[24px]">
+            <ReadMoreLink path="/courses" message="Дивитись усі заходи" />
+          </div>
         </div>
       </Container>
     </section>
