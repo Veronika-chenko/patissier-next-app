@@ -1,6 +1,7 @@
 import Footer from '@/components/modules/Footer';
 import StatisticsSection from '@/components/modules/Statistics';
 import { default as AboutSection } from '@/containers/about-page/hero-section';
+import CoursesSection from '@/containers/home-page/courses-section';
 import HeroSection from '@/containers/home-page/hero-section';
 
 export default function Home() {
@@ -10,8 +11,7 @@ export default function Home() {
       <HeroSection />
       <StatisticsSection />
       <AboutSection headingLevel="h2" />
-      {/* Courses */}
-      {/* Courses */}
+      <CoursesSection />
       {/* Reviews */}
       {/* Insta */}
       <Footer />

@@ -42,6 +42,9 @@ module.exports = {
       black: '#000000',
       'input-bg': '#101011',
     },
+    boxShadow: {
+      card: '0px 0px 209px -30px #C7673833',
+    },
   },
   plugins: [],
 };
