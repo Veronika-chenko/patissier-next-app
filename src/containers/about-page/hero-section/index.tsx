@@ -9,12 +9,13 @@ import BackLink from '@/components/common/backLink';
 const AboutHeroSection = ({ headingLevel }: { headingLevel: 'h1' | 'h2' }) => {
   const Heading = headingLevel;
   const isAboutPage = headingLevel === 'h1';
+
   return (
     <section className="relative w-full text-white pb-[60px] lg:pb-[100px] pt-[60px] lg:pt-[100px]">
       <Container>
         <div>
           {isAboutPage && (
-            <div className="absolute top-[20px]">
+            <div className="absolute top-[60px]">
               <BackLink path="/" />
             </div>
           )}

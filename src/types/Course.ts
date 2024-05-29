@@ -3,28 +3,28 @@ interface INameAndDescriptionObject {
   description: string;
 }
 
-interface ICourseDetails {
-  details_1: INameAndDescriptionObject;
-  details_2: INameAndDescriptionObject;
-  details_3: INameAndDescriptionObject;
+export interface ICourseFeatures {
+  feature_1: INameAndDescriptionObject;
+  feature_2: INameAndDescriptionObject;
+  feature_3: INameAndDescriptionObject;
 }
 
-interface ICourseProgram {
+export interface ICourseProgram {
   program_1: INameAndDescriptionObject;
   program_2: INameAndDescriptionObject;
   program_3: INameAndDescriptionObject;
 }
 
 export type TCourse = {
-  id: string;
+  id: number;
   type: 'courses' | 'master_classes';
   category: string;
   previewText: string;
   totalPlaces: number;
   courseDuration: string;
   description: string;
-  images: [string];
-  details: ICourseDetails;
+  images: string[];
+  features: ICourseFeatures;
   program: ICourseProgram;
-  groups: [any];
+  groups: any[];
 };

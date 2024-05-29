@@ -1,5 +1,6 @@
 import { TCourse } from '@/types/Course';
 import Image from 'next/image';
+import Link from 'next/link';
 import { FC } from 'react';
 
 interface ICourseCardProps {
@@ -7,7 +8,6 @@ interface ICourseCardProps {
 }
 
 const CourseCard: FC<ICourseCardProps> = ({ course }) => {
-  // console.log('🚀 ~ course:', course);
   const {
     id: courseID,
     category,
@@ -51,9 +51,12 @@ const CourseCard: FC<ICourseCardProps> = ({ course }) => {
           <p className="text-[20px] font-semibold text-white">
             {groups[0] ? groups[0].price : '?????'} грн
           </p>
-          <button className="items-center py-[16px] px-[40px] text-[16px] font-bold text-accent-text hover:text-black hover:bg-accent focus:text-black focus:bg-accent border-[2px] rounded-md border-accent ease-linear duration-250">
+          <Link
+            href={`/courses/${courseID}`}
+            className="items-center py-[16px] px-[40px] text-[16px] font-bold text-accent-text hover:text-black hover:bg-accent focus:text-black focus:bg-accent border-[2px] rounded-md border-accent ease-linear duration-250"
+          >
             Детальніше
-          </button>
+          </Link>
         </div>
       </div>
     </li>

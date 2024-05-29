@@ -6,18 +6,20 @@ import { useEffect, useState } from 'react';
 
 const CourseListSection = () => {
   const [courses, setCourses] = useState<TCourse[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(false);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch('/db/courses.json');
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
         const data = await response.json();
-        // console.log('🚀 ~ data:', data);
+
         setCourses(data.courses);
+        setIsLoading(false);
       } catch (error) {
-        console.error('Failed to fetch data:', error);
+        setIsLoading(false);
+        setError(true);
       }
     };
 
@@ -27,6 +29,14 @@ const CourseListSection = () => {
   return (
     <section>
       <Container>
+        {isLoading && (
+          <p className="m-auto text-center text-white">Loading...</p>
+        )}
+        {error && (
+          <p className="m-auto text-center text-white">
+            Oops, something went wrong. Please try again later.
+          </p>
+        )}
         <ul className="flex flex-col gap-[20px] lg:flex-row lg:gap-[60px]">
           {courses &&
             courses.map((course) => (
@@ -37,4 +47,5 @@ const CourseListSection = () => {
     </section>
   );
 };
+
 export default CourseListSection;
