@@ -37,14 +37,17 @@ const DetailsSection: FC<ICourseDetailsProps> = ({
                 priority
               />
             </div>
-            <div className="flex flex-col gap-[20px] lg:gap-[24px]">
+            <div className="space-y-[20px] lg:space-y-[24px]">
               <div className="p-[20px] lg:py-[40px] bg-main-bg rounded-md shadow-[0_0_209px_-30px_#C7673833]">
                 <h3 className="text-[20px] font-semibold text-accent-text mb-[16px] lg:mb-[20px] text-center">
                   Програма
                 </h3>
                 <ul className="flex flex-col gap-[12px]">
                   {programArray.map(({ name, description }, index) => (
-                    <li key={index} className="lg:flex gap-[12px]">
+                    <li
+                      key={index}
+                      className="lg:flex lg:items-center gap-[12px]"
+                    >
                       <p className="font-bold text-white">{name}:</p>
                       <p className="text-[14px] text-white">{description}</p>
                     </li>
