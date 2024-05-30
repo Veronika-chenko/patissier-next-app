@@ -1,10 +1,10 @@
-import Container from '@/components/common/container';
 import { marianna } from '@/libs/fonts';
 import Image from 'next/image';
 import aboutImage from '/public/images/about/about.jpg';
 import signature from '/public/images/about/signature.png';
 import ReadMoreLink from '@/components/common/readMoreLink';
 import BackLink from '@/components/common/backLink';
+import Container from '@/components/common/container';
 
 const AboutHeroSection = ({ headingLevel }: { headingLevel: 'h1' | 'h2' }) => {
   const Heading = headingLevel;
@@ -25,16 +25,18 @@ const AboutHeroSection = ({ headingLevel }: { headingLevel: 'h1' | 'h2' }) => {
             Про нас
           </Heading>
           <div className="flex flex-col gap-[20px] lg:flex-row lg:gap-[60px]">
-            <Image
-              src={aboutImage}
-              alt="About us"
-              className="lg:w-[552px] lg:h-[424px] rounded-md object-cover shrink-0"
-              width="0"
-              height="0"
-              sizes="100vw"
-              priority={isAboutPage}
-              placeholder="blur"
-            />
+            <div className="lg:w-[552px] lg:h-[424px] shrink-0">
+              <Image
+                src={aboutImage}
+                alt="About us"
+                className="rounded-md object-cover"
+                width="0"
+                height="0"
+                sizes="100vw"
+                priority={isAboutPage}
+                placeholder="blur"
+              />
+            </div>
             <div className="lg:h-[424px] lg:max-w[550px]">
               <p className="mb-[12px] lg:mb-[16px] text-[20px] font-semibold">
                 Вітаю!
