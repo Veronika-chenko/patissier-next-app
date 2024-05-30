@@ -1,12 +1,11 @@
 import Container from '@/components/common/container';
-
 import Navigation from './Navigation';
 import ContactLinks from './ContactLinks';
 import ContactForm from './ContactForm';
 
 const Footer = () => {
   return (
-    <footer className="text-white">
+    <footer className="text-white bg-main-bg">
       <Container>
         <div className="w-full divide-y divide-[#5C5C5D]">
           <div className="w-full lg:grid lg:grid-cols-2 lg:gap-[40px] pt-[20px] pb-[50px] lg:py-[60px]">

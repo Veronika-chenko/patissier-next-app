@@ -19,7 +19,7 @@ const AboutCourseSection: FC<ICourseProps> = ({ course }) => {
     <section className="relative py-[60px] lg:py-[100px]">
       <Container>
         <div>
-          <div className="absolute top-[60px]">
+          <div className="absolute top-[20px] lg:top-[60px]">
             <BackLink path="/courses" />
           </div>
           <h1
@@ -39,6 +39,7 @@ const AboutCourseSection: FC<ICourseProps> = ({ course }) => {
                 height="0"
                 sizes="100vw"
                 className="w-full lg:w-[552px] h-auto rounded-md"
+                priority
               />
             </div>
             <div>

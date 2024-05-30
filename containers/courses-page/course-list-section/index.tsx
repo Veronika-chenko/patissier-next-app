@@ -27,8 +27,9 @@ const CourseListSection = () => {
   }, []);
 
   return (
-    <section>
+    <section className="py-[60px] lg:py-[100px]">
       <Container>
+        {/* <h2>Курси та майстер-класи</h2> */}
         {isLoading && (
           <p className="m-auto text-center text-white">Loading...</p>
         )}
@@ -37,12 +38,13 @@ const CourseListSection = () => {
             Oops, something went wrong. Please try again later.
           </p>
         )}
-        <ul className="flex flex-col gap-[20px] lg:flex-row lg:gap-[60px]">
-          {courses &&
-            courses.map((course) => (
+        {!isLoading && courses && (
+          <ul className="flex flex-col gap-[20px] lg:flex-row lg:gap-[60px]">
+            {courses.map((course) => (
               <CourseCard key={course.id} course={course} />
             ))}
-        </ul>
+          </ul>
+        )}
       </Container>
     </section>
   );

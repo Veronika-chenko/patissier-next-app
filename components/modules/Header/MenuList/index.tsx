@@ -17,7 +17,11 @@ const activeLinkStyles =
   'text-accent-text bg-[#0F0908] border-accent border-b-[1px]';
 
 const isActiveLink = (currentPath: string, navListPath: string): string => {
-  return currentPath.includes(navListPath) ? activeLinkStyles : '';
+  const pathWithTrailingSlash = navListPath + '/';
+  return currentPath === navListPath ||
+    currentPath.startsWith(pathWithTrailingSlash)
+    ? activeLinkStyles
+    : '';
 };
 
 const MenuList = ({ handleClick }: MenuListProps) => {

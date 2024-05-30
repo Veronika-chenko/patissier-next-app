@@ -15,12 +15,12 @@ const AboutHeroSection = ({ headingLevel }: { headingLevel: 'h1' | 'h2' }) => {
       <Container>
         <div>
           {isAboutPage && (
-            <div className="absolute top-[60px]">
+            <div className="absolute top-[20px] lg:top-[60px]">
               <BackLink path="/" />
             </div>
           )}
           <Heading
-            className={`${marianna.className} mb-[40px] text-[52px] text-accent-text text-center lg:mb-[100px] lg:text-[84px]`}
+            className={`${marianna.className} mb-[40px] text-[52px] leading-none text-accent-text text-center lg:mb-[100px] lg:text-[84px]`}
           >
             Про нас
           </Heading>
@@ -41,7 +41,7 @@ const AboutHeroSection = ({ headingLevel }: { headingLevel: 'h1' | 'h2' }) => {
               <p className="mb-[12px] lg:mb-[16px] text-[20px] font-semibold">
                 Вітаю!
               </p>
-              <div>
+              <div className="relative">
                 <p className="text-[16px] mb-[12px] lg:mb-[16px]">
                   Мене звати Дарія Тюлєнєва і я - ваш провідник у солодкий світ
                   вишуканих кондитерських виробів.
@@ -61,14 +61,13 @@ const AboutHeroSection = ({ headingLevel }: { headingLevel: 'h1' | 'h2' }) => {
                     <ReadMoreLink path="/about" message="Читати далі" />
                   </div>
                 )}
-
                 <Image
                   src={signature}
                   alt="signature"
-                  // className="absolute right-0 bottom-0 lg:w-[280px] lg:h-[204px]"
-                  className="float-right w-[124px] lg:w-[280px] lg:h-[204px]"
+                  className="absolute right-0 bottom-[-15%] lg:static lg:float-right w-[124px] lg:w-[280px] lg:h-[204px]"
                   width="0"
                   height="0"
+                  sizes="100vw"
                 />
               </div>
             </div>
