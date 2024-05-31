@@ -1,6 +1,5 @@
 'use client';
-import Container from '@/components/common/container';
-import Footer from '@/components/modules/Footer';
+import { Container, Footer } from '@/components';
 import Image from 'next/image';
 import Link from 'next/link';
 

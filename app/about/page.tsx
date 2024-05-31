@@ -1,6 +1,5 @@
-import Footer from '@/components/modules/Footer';
-import StatisticsSection from '@/components/modules/Statistics';
-import AboutHeroSection from '@/containers/about-page/hero-section';
+import { Footer, StatisticsSection } from '@/components';
+import { AboutHeroSection } from '@/containers';
 
 const About = () => {
   return (

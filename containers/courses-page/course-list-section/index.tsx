@@ -1,10 +1,9 @@
 'use client';
-import Container from '@/components/common/container';
-import CourseCard from '@/components/modules/Cards/CourseCard';
+import { Container, CourseCard } from '@/components';
 import { TCourse } from '@/types/Course';
 import { useEffect, useState } from 'react';
 
-const CourseListSection = () => {
+export const CourseListSection = () => {
   const [courses, setCourses] = useState<TCourse[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -49,5 +48,3 @@ const CourseListSection = () => {
     </section>
   );
 };
-
-export default CourseListSection;

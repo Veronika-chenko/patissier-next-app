@@ -1,9 +1,9 @@
-import Container from '@/components/common/container';
 import Navigation from './Navigation';
 import ContactLinks from './ContactLinks';
 import ContactForm from './ContactForm';
+import { Container } from '@/components';
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className="text-white bg-main-bg">
       <Container>
@@ -29,5 +29,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;

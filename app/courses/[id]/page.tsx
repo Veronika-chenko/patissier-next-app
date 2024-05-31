@@ -1,11 +1,13 @@
 'use client';
-import Footer from '@/components/modules/Footer';
-import AboutCourseSection from '@/containers/course-details-page/about-section';
-import DetailsSection from '@/containers/course-details-page/details-section';
-import FeatureSection from '@/containers/course-details-page/feature-section';
-import { TCourse } from '@/types/Course';
-import Link from 'next/link';
 import { FC, useEffect, useState } from 'react';
+import Link from 'next/link';
+import { TCourse } from '@/types/Course';
+import { Footer } from '@/components';
+import {
+  AboutCourseSection,
+  DetailsSection,
+  FeatureSection,
+} from '@/containers';
 
 interface CoursePageProps {
   params: { id: string };

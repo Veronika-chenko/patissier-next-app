@@ -2,12 +2,13 @@ import { TCourse } from '@/types/Course';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
+import { formatCoursePrice } from './helpers/formatPrice';
 
 interface ICourseCardProps {
   course: TCourse;
 }
 
-const CourseCard: FC<ICourseCardProps> = ({ course }) => {
+export const CourseCard: FC<ICourseCardProps> = ({ course }) => {
   const {
     id: courseID,
     category,
@@ -49,7 +50,8 @@ const CourseCard: FC<ICourseCardProps> = ({ course }) => {
         </div>
         <div className="flex justify-between items-center">
           <p className="text-[20px] font-semibold text-white">
-            {groups[0] ? groups[0].price : '?????'} грн
+            {groups[0]?.price ? formatCoursePrice(groups[0].price) : '?????'}{' '}
+            грн
           </p>
           <Link
             href={`/courses/${courseID}`}
@@ -62,5 +64,3 @@ const CourseCard: FC<ICourseCardProps> = ({ course }) => {
     </li>
   );
 };
-
-export default CourseCard;

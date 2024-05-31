@@ -1,10 +1,14 @@
-import { PageTitle } from '@/components/common/texts/titles/PageTitle';
-import Footer from '@/components/modules/Footer';
+import { Footer } from '@/components';
+import { marianna } from '@/libs/fonts';
 
 const Blog = () => {
   return (
     <main className="bg-main-bg h-screen text-white">
-      <PageTitle title="Блог" />
+      <h1
+        className={`${marianna.className} text-accent-text text-[52px] text-center mb-[40px] lg:text-[84px] lg:mb-[32px]`}
+      >
+        Блог
+      </h1>
       <Footer />
     </main>
   );

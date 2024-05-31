@@ -1,16 +1,18 @@
-import Link from 'next/link';
+'use client';
 import ArrowLeft from '/public/images/arrows/arrow-back.svg';
+import { useRouter } from 'next/navigation';
 
-const BackLink = ({ path }: { path: string }) => {
+export const BackButton = () => {
+  const router = useRouter();
+
   return (
-    <Link
-      href={path}
+    <button
+      type="button"
+      onClick={() => router.back()}
       className="inline-flex gap-[8px] items-center text-[14px] text-grey hover:text-accent-text focus:text-accent-text ease-linear duration-250"
     >
       <ArrowLeft className="stroke-current" />
       назад
-    </Link>
+    </button>
   );
 };
-
-export default BackLink;

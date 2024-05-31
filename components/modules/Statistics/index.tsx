@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import statistics from './statistics.json';
-import Container from '../../common/container';
+import { Container } from '@/components/common';
 
-const StatisticsSection = () => {
+export const StatisticsSection = () => {
   return (
     <section className="w-full text-grey pb-[60px] lg:pb-[100px] lg:pt-[60px]">
       <Container>
@@ -34,5 +34,3 @@ const StatisticsSection = () => {
     </section>
   );
 };
-
-export default StatisticsSection;

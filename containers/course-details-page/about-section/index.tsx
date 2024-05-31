@@ -1,5 +1,4 @@
-import BackLink from '@/components/common/backLink';
-import Container from '@/components/common/container';
+import { BackButton, Container } from '@/components';
 import { marianna } from '@/libs/fonts';
 import { TCourse } from '@/types/Course';
 import Image from 'next/image';
@@ -9,7 +8,7 @@ interface ICourseProps {
   course: TCourse;
 }
 
-const AboutCourseSection: FC<ICourseProps> = ({ course }) => {
+export const AboutCourseSection: FC<ICourseProps> = ({ course }) => {
   const { category, type, previewText, description, images } = course;
 
   const displayedType = type === 'courses' ? 'курс' : 'майстер-клас';
@@ -20,7 +19,7 @@ const AboutCourseSection: FC<ICourseProps> = ({ course }) => {
       <Container>
         <div>
           <div className="absolute top-[20px] lg:top-[60px]">
-            <BackLink path="/courses" />
+            <BackButton />
           </div>
           <h1
             className={`${marianna.className} mb-[40px] text-[72px] text-accent-text text-center lg:mb-[32px] lg:text-[84px]`}
@@ -58,5 +57,3 @@ const AboutCourseSection: FC<ICourseProps> = ({ course }) => {
     </section>
   );
 };
-
-export default AboutCourseSection;

@@ -1,4 +1,4 @@
-import Container from '@/components/common/container';
+import { Container } from '@/components';
 import { ICourseProgram } from '@/types/Course';
 import Image from 'next/image';
 import { FC } from 'react';
@@ -10,7 +10,7 @@ interface ICourseDetailsProps {
   price: number;
 }
 
-const DetailsSection: FC<ICourseDetailsProps> = ({
+export const DetailsSection: FC<ICourseDetailsProps> = ({
   program,
   imageURL,
   category,
@@ -72,5 +72,3 @@ const DetailsSection: FC<ICourseDetailsProps> = ({
     </section>
   );
 };
-
-export default DetailsSection;

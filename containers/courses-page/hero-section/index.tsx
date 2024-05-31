@@ -1,6 +1,6 @@
 import { marianna } from '@/libs/fonts';
 
-const CoursesHeroSection = () => {
+export const CoursesHeroSection = () => {
   return (
     <section>
       <div className="flex justify-center mx-auto bg-courses-hero-mobile bg-center bg-no-repeat md:bg-courses-hero-tablet lg:bg-courses-hero-desktop bg-cover lg:bg-contain">
@@ -22,5 +22,3 @@ const CoursesHeroSection = () => {
     </section>
   );
 };
-
-export default CoursesHeroSection;

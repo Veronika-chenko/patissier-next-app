@@ -1,12 +1,10 @@
 'use client';
-import Container from '@/components/common/container';
+import { Container, CourseCard, ReadMoreLink } from '@/components';
 import { marianna } from '@/libs/fonts';
-import CourseCard from '@/components/modules/Cards/CourseCard';
 import { TCourse } from '@/types/Course';
 import { useEffect, useState } from 'react';
-import ReadMoreLink from '@/components/common/readMoreLink';
 
-const CoursesSection = () => {
+export const CoursesSection = () => {
   const [courses, setCourses] = useState<TCourse[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -70,5 +68,3 @@ const CoursesSection = () => {
     </section>
   );
 };
-
-export default CoursesSection;

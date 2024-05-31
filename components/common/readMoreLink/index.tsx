@@ -6,7 +6,7 @@ type ReadMoreLinkProps = {
   message: string;
 };
 
-const ReadMoreLink = ({ path, message }: ReadMoreLinkProps) => {
+export const ReadMoreLink = ({ path, message }: ReadMoreLinkProps) => {
   return (
     <Link
       href={path}
@@ -17,5 +17,3 @@ const ReadMoreLink = ({ path, message }: ReadMoreLinkProps) => {
     </Link>
   );
 };
-
-export default ReadMoreLink;

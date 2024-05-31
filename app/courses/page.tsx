@@ -1,7 +1,6 @@
 // import Footer from '@/components/modules/Footer';
-import StatisticsSection from '@/components/modules/Statistics';
-import CourseListSection from '@/containers/courses-page/course-list-section';
-import CoursesHeroSection from '@/containers/courses-page/hero-section';
+import { StatisticsSection } from '@/components';
+import { CourseListSection, CoursesHeroSection } from '@/containers';
 import { Suspense } from 'react';
 
 const Courses = () => {

@@ -1,4 +1,4 @@
-import Container from '@/components/common/container';
+import { Container } from '@/components';
 import { ICourseFeatures } from '@/types/Course';
 import { FC } from 'react';
 
@@ -7,7 +7,7 @@ interface ICourseFeatureProps {
   type: 'courses' | 'master_classes';
 }
 
-const FeatureSection: FC<ICourseFeatureProps> = ({ features, type }) => {
+export const FeatureSection: FC<ICourseFeatureProps> = ({ features, type }) => {
   const featuresArray = Object.values(features);
   const displayedType = type === 'courses' ? 'курс' : 'майстер-клас';
 
@@ -33,5 +33,3 @@ const FeatureSection: FC<ICourseFeatureProps> = ({ features, type }) => {
     </section>
   );
 };
-
-export default FeatureSection;

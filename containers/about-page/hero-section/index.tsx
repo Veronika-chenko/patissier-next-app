@@ -2,11 +2,13 @@ import { marianna } from '@/libs/fonts';
 import Image from 'next/image';
 import aboutImage from '/public/images/about/about.jpg';
 import signature from '/public/images/about/signature.png';
-import ReadMoreLink from '@/components/common/readMoreLink';
-import BackLink from '@/components/common/backLink';
-import Container from '@/components/common/container';
+import { BackButton, Container, ReadMoreLink } from '@/components';
 
-const AboutHeroSection = ({ headingLevel }: { headingLevel: 'h1' | 'h2' }) => {
+export const AboutHeroSection = ({
+  headingLevel,
+}: {
+  headingLevel: 'h1' | 'h2';
+}) => {
   const Heading = headingLevel;
   const isAboutPage = headingLevel === 'h1';
 
@@ -16,7 +18,7 @@ const AboutHeroSection = ({ headingLevel }: { headingLevel: 'h1' | 'h2' }) => {
         <div>
           {isAboutPage && (
             <div className="absolute top-[20px] lg:top-[60px]">
-              <BackLink path="/" />
+              <BackButton />
             </div>
           )}
           <Heading
@@ -77,5 +79,3 @@ const AboutHeroSection = ({ headingLevel }: { headingLevel: 'h1' | 'h2' }) => {
     </section>
   );
 };
-
-export default AboutHeroSection;
