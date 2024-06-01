@@ -13,7 +13,7 @@ export const AboutHeroSection = ({
   const isAboutPage = headingLevel === 'h1';
 
   return (
-    <section className="relative w-full text-white pb-[60px] lg:pb-[100px] pt-[60px] lg:pt-[100px]">
+    <section className="relative w-full text-white pt-[60px] lg:pt-[100px] pb-[60px] lg:pb-[100px]">
       <Container>
         <div>
           {isAboutPage && (
@@ -30,7 +30,7 @@ export const AboutHeroSection = ({
             <div className="lg:w-[552px] lg:h-[424px] shrink-0">
               <Image
                 src={aboutImage}
-                alt="About us"
+                alt="про нас"
                 className="rounded-md object-cover"
                 width="0"
                 height="0"
