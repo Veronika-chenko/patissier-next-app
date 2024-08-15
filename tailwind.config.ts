@@ -47,6 +47,8 @@ module.exports = {
     },
     boxShadow: {
       card: '0px 0px 209px -30px #C7673833',
+      reviewContainer:
+        '52px 4px 104px -30px rgba(199, 103, 56, 0.1), -52px -4px 104px -30px rgba(199, 103, 56, 0.1)',
     },
   },
   plugins: [],

@@ -1,4 +1,4 @@
-import { Footer, StatisticsSection } from '@/components';
+import { Footer, StatisticsSection, ReviewsSection } from '@/components';
 import { AboutHeroSection, CoursesSection, HeroSection } from '@/containers';
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
         <StatisticsSection />
         <AboutHeroSection headingLevel="h2" />
         <CoursesSection />
-        {/* Reviews */}
+        <ReviewsSection />
         {/* Insta */}
       </main>
       <Footer />
