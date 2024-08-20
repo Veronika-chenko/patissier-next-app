@@ -5,7 +5,7 @@ import { Container } from '@/components';
 
 export const Footer = () => {
   return (
-    <footer className="text-white bg-main-bg">
+    <footer className="text-white bg-main-bg shadow-[0px_-10px_246px_-76px_#C767385E]">
       <Container>
         <div className="w-full divide-y divide-[#5C5C5D]">
           <div className="w-full lg:grid lg:grid-cols-2 lg:gap-[40px] pt-[20px] pb-[50px] lg:py-[60px]">

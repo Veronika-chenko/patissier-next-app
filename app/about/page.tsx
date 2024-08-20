@@ -1,5 +1,9 @@
 import { Footer, StatisticsSection } from '@/components';
-import { AboutHeroSection, WayToSuccessSection } from '@/containers';
+import {
+  AboutHeroSection,
+  GallerySection,
+  WayToSuccessSection,
+} from '@/containers';
 
 const About = () => {
   return (
@@ -7,6 +11,7 @@ const About = () => {
       <AboutHeroSection headingLevel="h1" />
       <StatisticsSection />
       <WayToSuccessSection />
+      <GallerySection />
       <Footer />
     </main>
   );

@@ -16,7 +16,15 @@ export const ReviewsSection = () => {
           Відгуки
         </h2>
         <div className="shadow-reviewContainer">
-          <Swiper spaceBetween={24} slidesPerView="auto">
+          <Swiper
+            spaceBetween={20}
+            slidesPerView="auto"
+            breakpoints={{
+              1224: {
+                spaceBetween: 24,
+              },
+            }}
+          >
             {reviews.map((review) => (
               <SwiperSlide
                 key={review.id}
